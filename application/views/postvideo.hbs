@@ -1,0 +1,26 @@
+<main>
+    <h2>POST A VIDEO</h2>
+    <form action="/posts/create" class="text-groupping" method="POST" enctype="multipart/form-data">
+
+        <div class="input-group">
+            <label for="title">Title of the video:</label>
+            <input type="text" name="title" id="title" placeholder="Title" name="title">
+        </div>
+
+        <div class="input-group">
+            <label for="description">Description of the video:</label>
+            <input type="text" name="description" id="description" placeholder="Description" name="description">
+        </div>
+
+        <div class="input-group">
+            <label for="document">Choose the video you want to upload:</label>
+            <input type="file" name="uploadVideo" id="document" accept="video/mp4, video/WebM, video/Ogg" name="uploadVideo">
+        </div>
+
+        <div class="input-group">
+            <p>I accept the Use Policy for uploading videos <input type="checkbox"></p>
+        </div>
+
+        <input type="submit" value="Upload Video" class="button">
+    </form>
+</main>

@@ -1,0 +1,61 @@
+<header>
+    <div class="header-logo">
+        <img src="/public/images/pelota.png" class="pelota-right">
+        <img src="/public/images/SoccerTube2.png" class="page-logo">
+        <img src="/public/images/pelota.png" class="pelota-left">
+    </div>
+{{log this}}
+
+
+    <nav>
+        <ul>
+
+            <li class="{{#if active.index}}currently{{else}}cada-uno{{/if}}">
+                {{#if active.index}}
+                    <img src="/public/images/pelota.png" class="pelota">
+                {{/if}}
+                <a href="/"><font color="#000000" size="5%" >Home</font></a>
+            </li>
+
+            {{#if isLoggedIn}}
+            {{else}}
+                <li  class="{{#if active.login}}currently{{else}}cada-uno{{/if}}">
+                    {{#if active.login}}
+                        <img src="/public/images/pelota.png" class="pelota">
+                    {{/if}}
+                    <a href="/login"><font color="#000000" size="5%">Login</font></a>
+                </li>
+            {{/if}}
+
+
+
+            <li  class="{{#if active.postvideo}}currently{{else}}cada-uno{{/if}}">
+                {{#if active.postvideo}}
+                    <img src="/public/images/pelota.png" class="pelota">
+                {{/if}}
+                <a href="/postvideo"><font color="#000000" size="5%">Post</font></a>
+            </li>
+            {{log this}}
+            <li class="{{#if active.profile}}currently{{else}}cada-uno{{/if}}">
+                {{#if active.profile}}
+                    <img src="/public/images/pelota.png" class="pelota">
+                {{/if}}
+                <a href="/profile"><font color="#000000" size="5%">Profile</font></a>
+            </li>
+
+
+
+            {{#if isLoggedIn}}
+                <form action="/users/logout" method="POST">
+                    <button class="button" type="submit">Logout</button>
+                </form>
+            {{else}}
+                <!-- Aquí puedes agregar el código para el inicio de sesión -->
+            {{/if}}
+
+
+
+
+        </ul>
+    </nav>
+</header>

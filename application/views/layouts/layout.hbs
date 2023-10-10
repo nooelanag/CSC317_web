@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="/public/css/style.css">
+      <script defer src="/public/js/indexx.js"></script>
+      {{#each css}}<link rel="stylesheet" href="/public/css/{{this}}">{{/each}}
+      {{#each js}}<script defer src="/public/js/{{this}}"></script>{{/each}}
+  </head>
+  <body>
+    <div id="container">
+        {{#if (nonEmptyObject messages)}}
+            {{>flashmessage this}}
+        {{/if}}
+
+        {{> header}}
+        {{{body}}}
+        {{>  footer}}
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/validation.js"></script>
+
+
+</head>
+
+<body>
+
+
+<header class="page-header">
+  <div class="header-logo">
+    <img src="../images/pelota.png" class="pelota-right">
+    <img src="../images/SoccerTube2.png" class="page-logo">
+    <img src="../images/pelota.png" class="pelota-left">
+  </div>
+
+
+  <nav>
+    <ul>
+      <li class="cada-uno"><a href="index.html"><font color="#000000" size="5%">Home</font></a></li>
+      <li class="cada-uno"><a href="login.html"><font color="#000000" size="5%">Login</font></a></li>
+      <li class="currently">
+        <img src="../images/pelota.png" class="pelota">
+        <a href="registration.html"><font color="#000000" size="5%">Register</font></a>
+      </li>
+      <li class="cada-uno"><a href="postvideo.html"><font color="#000000" size="5%">Post</font></a></li>
+      <li  class="cada-uno"><a href="viewpost.html"><font color="#000000" size="5%">View</font></a></li>
+      <li class="cada-uno"><a href="profile.html"><font color="#000000" size="5%">Profile</font></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>WELCOME TO THE REGISTRATION SECTION:</h2>
+  <h3 class="second-header">REGISTER</h3>
+
+  <form id="reg-form" class="text-groupping">
+    <div class="input-group">
+      <label for="username">Username: </label>
+      <input type="text" name="username" id="username" placeholder="Username">
+      <small class="showerrorsize notshowerrorsize">Username should contain at least 3 characters</small>
+      <small class="showerrorbegin notshowerrorbegin">Username should start with a letter</small>
+    </div>
+    <div class="input-group">
+      <label for="Email">Email: </label>
+      <input type="text" name="email" id="email" placeholder="Email">
+      <small class="showerroremail notshowerroremail">email must follow this structure: </small>
+      <small class="showerroremail notshowerroremail">characters@characters.characters</small>
+    </div>
+    <div class="input-group">
+      <label for="password">Password:  </label>
+      <input type="password" name="password" id="password" placeholder="Password">
+      <small class="showerrorsize notshowerrorsize">Password should contain at least 8 characters</small>
+      <small class="showerrorcontainnumber notshowerrorcontainnumber">Password should contain 1 number</small>
+      <small class="showerrorcontainuppercase notshowerrorcontainuppercase">Password should contain 1 upper case letter</small>
+      <small class="showerrorcontainsymbol notshowerrorcontainsymbol">Password should contain 1 of: /*-+!@#$^&~[]</small>
+    </div>
+    <div class="input-group">
+      <label for="confirmpassword">Confirm Password:  </label>
+      <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password">
+      <small class="showerrorpass notshowerrorpass">Both passwords should be the same</small>
+    </div>
+
+    <div>
+      <p>I am 13 or older <input type="checkbox" name="confirm" id="confirm" required></p>
+    </div>
+
+    <div>
+      <p>I have read and accept TOS and Privacy rules <input type="checkbox" name="rules" id="rules" required> Available <a href="empty.html"><font color="#000000" size="4%" class="with-underline">here</font></a></p>
+    </div>
+
+    <div>
+      <input type="submit" value="Register" id="submitter" class="valid-form invalid-form">
+    </div>
+
+  </form>
+
+
+</main>
+
+<footer class="site-footer">
+  <a href="https://www.instagram.com/nooelan/" >
+    <img src="../images/logo-ig-instagram-icon-download-icons-12.png" class="left-image-footer">
+  </a>
+  <h3 class="text-footer">Noel Andolz Aguado &copy;</h3>
+  <a href="https://www.instagram.com/nooelan/" >
+    <img src="../images/logo-ig-instagram-icon-download-icons-12.png" class="right-image-footer">
+  </a>
+</footer>
+
+
+
+</body>
+</html>
