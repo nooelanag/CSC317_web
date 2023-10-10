@@ -11,8 +11,8 @@ Please follow the instructions below and fill in the information requested when 
 |               |      Information       |
 |:-------------:|:----------------------:|
 | Student Name  |   Noel Andolz Aguado   |
-| Student ID    |       922977234        |
-| Student Email | nandolzaguado@sfsu.edu |
+| Student ID    |                        |
+| Student Email |                        |
 
 
 
