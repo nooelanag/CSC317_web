@@ -1,5 +1,10 @@
 # CSC 317 Course Project
 
+## Description
+
+This project has been done for my class CSC 317. The main goal is to make a Youtube-like website.
+
+
 ## Purpose
 
 The purpose of this repository is to store all the code for your web application. This also includes the history of all commits made and who made them. Only code submitted on the master branch will be graded.
